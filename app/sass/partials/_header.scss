@@ -1,0 +1,72 @@
+.header {
+	width: 100%;
+	min-height: 95px;
+}
+//nav menu
+.close-btn {
+	display: none;
+}
+.flexbox {
+	min-height: 95px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.overlay__content {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+@media only screen and (max-width: 1000px) {
+	.overlay {
+		position: fixed;
+		top: 0;	//меню відкриється зверху вниз - знизу вверх, залежить від top, bottom, залежить від height 0% чи 100% і відповдного js
+		right: 0; //меню відкриється зліва на право - справа на ліво, залежить від left, right залежить віж width 0% чи 100% і відповдного js
+		width: 0%; //якщо 0 то зліва на право - справа на ліво, якщо 100
+		height: 100%; //якщо 100 то зліва на право - справа на ліво, якщо 0 зверху вниз - знизу вверх
+		background: rgba(0,0,0, .8);
+		overflow-x: hidden;
+		z-index: 5;
+		transition: all .7s; //анімація відкриття вікна
+		a {
+			display: block;
+			padding: 10px;
+			color: #ccc;
+			font-size: 30px;
+			text-decoration: none;
+			&:hover, &:focus {
+				color: #fff;
+				transition: all .5s ease-in-out .1s;
+			}
+		}
+		.close-btn {
+			position: absolute;
+			top: 15px;
+			right: 5px;
+			font-size: 50px;
+		}
+	}
+	.overlay__content {
+		flex-flow: column nowrap;
+		position: relative;
+		top: 20%;// відступ меню зверху
+		width: 100%;
+		text-align: center;
+	}
+	#open-btn-nav {
+		display: block;
+		padding: 7px;
+		width: 35px;
+		height: 30px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		.line {
+			display: block;
+			width: 20px;
+			height: 3px;
+			background: #363636;
+		}
+		.line:nth-child(2) {margin: 3px 0;}
+	}
+}
