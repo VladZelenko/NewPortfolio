@@ -1,6 +1,18 @@
 .header {
+	// position: relative;
+	// z-index: 2;
 	width: 100%;
 	min-height: 95px;
+	 .logo {
+	 	a {
+	 		color: #ffffff;
+	 		&:hover {
+	 			text-decoration: none;
+	 			color: #ffffff;
+	 		}
+	 		span {display: block;}
+	 	}
+	 }
 }
 //nav menu
 .close-btn {

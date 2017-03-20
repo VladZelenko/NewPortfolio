@@ -1,12 +1,98 @@
 .intro {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 770px;
+}
+.body_slides {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	z-index: -2;
+	background: #000;
+}
+.body_slides,
+.body_slides:after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+.body_slides:after {
+	content: '';
+	background: transparent url('../../img/pattern.png') repeat top left;
+}
+@-webkit-keyframes anim_slides {
+	0% {opacity: 0;}
+	6% {opacity: 1;}
+	24% {opacity: 1;}
+	30% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@-moz-keyframes anim_slides {
+	0% {opacity: 0;}
+	6% {opacity: 1;}
+	24% {opacity: 1;}
+	30% {opacity: 0;}
+	100% {opacity: 0;}
+}
+.body_slides li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: none;
+	opacity: 0;
+	-webkit-animation: anim_slides 30s linear infinite 0s;
+	-moz-animation: anim_slides 30s linear infinite 0s;
+	-o-animation: anim_slides 30s linear infinite 0s;
+	-ms-animation: anim_slides 30s linear infinite 0s;
+	animation: anim_slides 30s linear infinite 0s;
 }
 
-.head_carousel {
-	position: absolute;
-	img {
-		width: 1366px;
-		height: 760px;
-	}
+.body_slides li:nth-child(1) {
+	background-image: url('../../img/piano-hand-photo-classic-music-lamp-wallpaper.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.body_slides li:nth-child(2) {
+	-webkit-animation-delay: 6.0s;
+	-moz-animation-delay: 6.0s;
+	background-image: url('../../img/unnamed.jpg');
+	background-position: 90% 100%;
+	background-size: cover;
+}
+
+.body_slides li:nth-child(3) {
+	-webkit-animation-delay: 12.0s;
+	-moz-animation-delay: 12.0s;
+	background-image: url('../../img/harmony.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.body_slides li:nth-child(4) {
+	-webkit-animation-delay: 18.0s;
+	-moz-animation-delay: 18.0s;
+	background-image: url('../../img/switzerland_alps_mountains_night_beautiful_landscape_99817_3840x2400.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.body_slides li:nth-child(5) {
+	-webkit-animation-delay: 24.0s;
+	-moz-animation-delay: 24.0s;
+	background-image: url('../../img/bikes-wallpaper-nice-wallpapers.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.body_slides li:nth-child(6) {
+	-webkit-animation-delay: 30.0s;
+	-moz-animation-delay: 30.0s;
+	background-image: url('../../img/wallhaven-2444.jpg');
+	background-position: center center;
+	background-size: cover;
 }

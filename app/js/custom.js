@@ -20,7 +20,7 @@ function closeNav(){
 //slick-carousel
 $('.head_carousel').slick({
 	infinite: true,
-	speed: 1000,
-	autoplaySpeed: 2000,
+	speed: 300,
+	autoplaySpeed: 3000,
 	autoplay: true
 });
