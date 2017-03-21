@@ -1,6 +1,32 @@
 .intro {
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 100%;
-	min-height: 770px;
+}
+.hero {
+	min-height: 80vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	.hero-title {
+		max-width: 700px;
+		min-width: 280px;
+		width: 100%;
+		color: #ffffff;
+		text-align: center;
+	}
+	.hero-social-icons li{
+		display: inline-block;
+		a:hover, &:focus {text-decoration: none;}
+	}
+	.fa {
+		display: block;
+		font-size: 30px;
+		color: $secondary_font_color;
+		padding: 5px;
+	}
 }
 .body_slides {
 	list-style: none;

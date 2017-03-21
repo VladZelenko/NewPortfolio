@@ -8538,8 +8538,45 @@ button.close {
       opacity: 0.75; }
 
 .intro {
-  width: 100%;
-  min-height: 770px; }
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.hero {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .hero .hero-title {
+    max-width: 700px;
+    min-width: 280px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center; }
+  .hero .hero-social-icons li {
+    display: inline-block; }
+    .hero .hero-social-icons li a:hover, .hero .hero-social-icons li:focus {
+      text-decoration: none; }
+  .hero .fa {
+    display: block;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 5px; }
 
 .body_slides {
   list-style: none;
@@ -8626,7 +8663,7 @@ button.close {
 
 .header {
   width: 100%;
-  min-height: 95px; }
+  min-height: 20vh; }
   .header .logo a {
     color: #ffffff; }
     .header .logo a:hover {
@@ -8668,8 +8705,16 @@ button.close {
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap; }
+  .overlay__content li a {
+    padding: 5px 15px;
+    color: #ffffff;
+    font: 600 18px "OpenSans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .overlay__content li a:hover {
+      text-decoration: none; }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .overlay {
     position: fixed;
     top: 0;
@@ -8693,8 +8738,8 @@ button.close {
         transition: all .5s ease-in-out .1s; }
     .overlay .close-btn {
       position: absolute;
-      top: 15px;
-      right: 5px;
+      top: 12px;
+      right: 7px;
       font-size: 50px; }
   .overlay__content {
     -webkit-box-orient: vertical;
@@ -8718,7 +8763,7 @@ button.close {
       display: block;
       width: 20px;
       height: 3px;
-      background: #363636; }
+      background: #ffffff; }
     #open-btn-nav .line:nth-child(2) {
       margin: 3px 0; } }
 

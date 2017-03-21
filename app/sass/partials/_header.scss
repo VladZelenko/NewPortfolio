@@ -2,7 +2,7 @@
 	// position: relative;
 	// z-index: 2;
 	width: 100%;
-	min-height: 95px;
+	min-height: 20vh;
 	 .logo {
 	 	a {
 	 		color: #ffffff;
@@ -14,6 +14,13 @@
 	 	}
 	 }
 }
+
+
+
+
+
+
+
 //nav menu
 .close-btn {
 	display: none;
@@ -28,9 +35,19 @@
 .overlay__content {
 	display: flex;
 	flex-flow: row nowrap;
+	li a{
+		padding: 5px 15px;
+		color: $secondary_font_color;
+		font: 600 18px $secondary_font;
+		text-transform: uppercase;
+		cursor: pointer;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
 	.overlay {
 		position: fixed;
 		top: 0;	//меню відкриється зверху вниз - знизу вверх, залежить від top, bottom, залежить від height 0% чи 100% і відповдного js
@@ -54,8 +71,8 @@
 		}
 		.close-btn {
 			position: absolute;
-			top: 15px;
-			right: 5px;
+			top: 12px;
+			right: 7px;
 			font-size: 50px;
 		}
 	}
@@ -77,7 +94,7 @@
 			display: block;
 			width: 20px;
 			height: 3px;
-			background: #363636;
+			background: #ffffff;
 		}
 		.line:nth-child(2) {margin: 3px 0;}
 	}
