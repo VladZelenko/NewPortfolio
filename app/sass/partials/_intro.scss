@@ -18,12 +18,10 @@
 		min-width: 280px;
 		width: 100%;
 		color: #ffffff;
+		font: 400 24px/28px $primary_font;
 		text-align: center;
 	}
-	.hero-social-icons li{
-		display: inline-block;
-		a:hover, &:focus {text-decoration: none;}
-	}
+	.hero-social-icons li{display: inline-block;}
 	.fa {
 		display: block;
 		font-size: 30px;
@@ -58,7 +56,7 @@
 //gradient on background-image
 .body_slides:after {
 	content: '';
-	background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .3));
+	background: linear-gradient(rgba(0,0,0, .3) 60%, rgba(0,0,0, .1));
 }
 //animation
 @-webkit-keyframes anim_slides {
@@ -84,39 +82,35 @@
 	background-size: cover;
 	background-repeat: none;
 	opacity: 0;
-	-webkit-animation: anim_slides 60s linear infinite 0s; //total length animation
-	-moz-animation: anim_slides 60s linear infinite 0s;	//total length animation
-	-o-animation: anim_slides 60s linear infinite 0s;	//total length animation
-	-ms-animation: anim_slides 60s linear infinite 0s;	//total length animation
-	animation: anim_slides 60s linear infinite 0s;	//total length animation
+	-webkit-animation: anim_slides 75s linear infinite 0s; //total length animation
+	-moz-animation: anim_slides 75s linear infinite 0s;	//total length animation
+	-o-animation: anim_slides 75s linear infinite 0s;	//total length animation
+	-ms-animation: anim_slides 75s linear infinite 0s;	//total length animation
+	animation: anim_slides 75s linear infinite 0s;	//total length animation
 }
 //image for background
 .body_slides li:nth-child(1) {
 	background-image: url('../../img/Wallpapers 1.jpg');
 	background-position: center center;
 }
-
 .body_slides li:nth-child(2) {
 	-webkit-animation-delay: 15.0s;
 	-moz-animation-delay: 15.0s;
 	background-image: url('../../img/Wallpapers 2.jpg');
 	background-position: 90% 100%;
 }
-
 .body_slides li:nth-child(3) {
 	-webkit-animation-delay: 30.0s;
 	-moz-animation-delay: 30.0s;
 	background-image: url('../../img/Wallpapers 3.jpg');
 	background-position: center center;
 }
-
 .body_slides li:nth-child(4) {
 	-webkit-animation-delay: 45.0s;
 	-moz-animation-delay: 45.0s;
 	background-image: url('../../img/Wallpapers 4.jpg');
 	background-position: center center;
 }
-
 .body_slides li:nth-child(5) {
 	-webkit-animation-delay: 60.0s;
 	-moz-animation-delay: 60.0s;

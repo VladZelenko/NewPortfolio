@@ -60,7 +60,7 @@ img {
   height: auto; }
 
 .wrapper {
-  width: 90%;
+  width: 95%;
   margin: 0 auto; }
 
 @font-face {
@@ -2448,12 +2448,11 @@ img {
   min-width: 280px;
   width: 100%;
   color: #ffffff;
+  font: 400 24px/28px "Lato", sans-serif;
   text-align: center; }
 
 .hero .hero-social-icons li {
   display: inline-block; }
-  .hero .hero-social-icons li a:hover, .hero .hero-social-icons li:focus {
-    text-decoration: none; }
 
 .hero .fa {
   display: block;
@@ -2502,9 +2501,9 @@ img {
 
 .body_slides:after {
   content: '';
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.3)));
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)); }
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), color-stop(60%, rgba(0, 0, 0, 0.1)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1));
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1)); }
 
 @-webkit-keyframes anim_slides {
   0% {
@@ -2527,8 +2526,8 @@ img {
   background-size: cover;
   background-repeat: none;
   opacity: 0;
-  -webkit-animation: anim_slides 60s linear infinite 0s;
-  animation: anim_slides 60s linear infinite 0s; }
+  -webkit-animation: anim_slides 75s linear infinite 0s;
+  animation: anim_slides 75s linear infinite 0s; }
 
 .body_slides li:nth-child(1) {
   background-image: url("../../img/Wallpapers 1.jpg");
@@ -2673,13 +2672,15 @@ img {
 .about-me {
   width: 100%;
   min-height: 700px;
-  padding: 100px 0; }
+  padding: 100px 0;
+  background-color: #F5F5DC; }
 
 .slide-down .fa {
   display: block;
   font-size: 30px;
   color: #ffffff;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .slide-down:hover, .slide-down:focus {
   text-decoration: none; }
