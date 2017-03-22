@@ -26,8 +26,17 @@
 		font-size: 30px;
 		color: $secondary_font_color;
 		padding: 5px;
+		&:hover, &:focus {transition: all .4s ease-in-out .1s;}
 	}
+	.fa-facebook:hover {color: #3b5998;}
+	.fa-twitter:hover {color: #4099ff;}
+	.fa-vk:hover {color: #cccccc;}
+	.fa-skype:hover {color: #00AFF0;}
+	.fa-github:hover {color: #00FF7F;}
+	.fa-google-plus-official:hover {color: #DE5245;}
+	.fa-instagram:hover {color: #705EA8;}
 }
+//backgound slider
 .body_slides {
 	list-style: none;
 	margin: 0;
@@ -43,10 +52,12 @@
 	top: 0px;
 	left: 0px;
 }
+//gradient on background-image
 .body_slides:after {
 	content: '';
-	background: transparent url('../../img/pattern.png') repeat top left;
+	background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .3));
 }
+//animation
 @-webkit-keyframes anim_slides {
 	0% {opacity: 0;}
 	6% {opacity: 1;}
@@ -70,55 +81,47 @@
 	background-size: cover;
 	background-repeat: none;
 	opacity: 0;
-	-webkit-animation: anim_slides 30s linear infinite 0s;
-	-moz-animation: anim_slides 30s linear infinite 0s;
-	-o-animation: anim_slides 30s linear infinite 0s;
-	-ms-animation: anim_slides 30s linear infinite 0s;
-	animation: anim_slides 30s linear infinite 0s;
+	-webkit-animation: anim_slides 60s linear infinite 0s; //total length animation
+	-moz-animation: anim_slides 60s linear infinite 0s;	//total length animation
+	-o-animation: anim_slides 60s linear infinite 0s;	//total length animation
+	-ms-animation: anim_slides 60s linear infinite 0s;	//total length animation
+	animation: anim_slides 60s linear infinite 0s;	//total length animation
 }
-
+//image for background
 .body_slides li:nth-child(1) {
-	background-image: url('../../img/piano-hand-photo-classic-music-lamp-wallpaper.jpg');
+	background-image: url('../../img/Wallpapers 1.jpg');
 	background-position: center center;
 	background-size: cover;
 }
 
 .body_slides li:nth-child(2) {
-	-webkit-animation-delay: 6.0s;
-	-moz-animation-delay: 6.0s;
-	background-image: url('../../img/unnamed.jpg');
+	-webkit-animation-delay: 15.0s;
+	-moz-animation-delay: 15.0s;
+	background-image: url('../../img/Wallpapers 2.jpg');
 	background-position: 90% 100%;
 	background-size: cover;
 }
 
 .body_slides li:nth-child(3) {
-	-webkit-animation-delay: 12.0s;
-	-moz-animation-delay: 12.0s;
-	background-image: url('../../img/harmony.jpg');
+	-webkit-animation-delay: 30.0s;
+	-moz-animation-delay: 30.0s;
+	background-image: url('../../img/Wallpapers 3.jpg');
 	background-position: center center;
 	background-size: cover;
 }
 
 .body_slides li:nth-child(4) {
-	-webkit-animation-delay: 18.0s;
-	-moz-animation-delay: 18.0s;
-	background-image: url('../../img/switzerland_alps_mountains_night_beautiful_landscape_99817_3840x2400.jpg');
+	-webkit-animation-delay: 45.0s;
+	-moz-animation-delay: 45.0s;
+	background-image: url('../../img/Wallpapers 4.jpg');
 	background-position: center center;
 	background-size: cover;
 }
 
 .body_slides li:nth-child(5) {
-	-webkit-animation-delay: 24.0s;
-	-moz-animation-delay: 24.0s;
-	background-image: url('../../img/bikes-wallpaper-nice-wallpapers.jpg');
-	background-position: center center;
-	background-size: cover;
-}
-
-.body_slides li:nth-child(6) {
-	-webkit-animation-delay: 30.0s;
-	-moz-animation-delay: 30.0s;
-	background-image: url('../../img/wallhaven-2444.jpg');
+	-webkit-animation-delay: 60.0s;
+	-moz-animation-delay: 60.0s;
+	background-image: url('../../img/Wallpapers 5.jpg');
 	background-position: center center;
 	background-size: cover;
 }

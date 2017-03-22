@@ -1,18 +1,16 @@
 .header {
-	// position: relative;
-	// z-index: 2;
 	width: 100%;
 	min-height: 20vh;
-	 .logo {
-	 	a {
-	 		color: #ffffff;
-	 		&:hover {
-	 			text-decoration: none;
-	 			color: #ffffff;
-	 		}
-	 		span {display: block;}
-	 	}
-	 }
+	.logo {
+		a {
+			color: #ffffff;
+			&:hover {
+				text-decoration: none;
+				color: #ffffff;
+			}
+			span {display: block;}
+		}
+	}
 }
 
 
