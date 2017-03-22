@@ -45,14 +45,14 @@
 	}
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 750px) {
 	.overlay {
 		position: fixed;
 		top: 0;	//меню відкриється зверху вниз - знизу вверх, залежить від top, bottom, залежить від height 0% чи 100% і відповдного js
 		right: 0; //меню відкриється зліва на право - справа на ліво, залежить від left, right залежить віж width 0% чи 100% і відповдного js
 		width: 0%; //якщо 0 то зліва на право - справа на ліво, якщо 100
 		height: 100%; //якщо 100 то зліва на право - справа на ліво, якщо 0 зверху вниз - знизу вверх
-		background: rgba(0,0,0, .8);
+		background: rgba(0,0,0, .95);
 		overflow-x: hidden;
 		z-index: 5;
 		transition: all .7s; //анімація відкриття вікна
@@ -76,10 +76,12 @@
 	}
 	.overlay__content {
 		flex-flow: column nowrap;
+		justify-content: center;
 		position: relative;
-		top: 20%;// відступ меню зверху
+		top: 30%;// Indent the top menu
 		width: 100%;
 		text-align: center;
+		li {padding: 10px 0;}
 	}
 	#open-btn-nav {
 		display: block;

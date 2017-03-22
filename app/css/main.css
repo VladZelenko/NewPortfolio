@@ -8726,14 +8726,14 @@ button.close {
     .overlay__content li a:hover {
       text-decoration: none; }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 750px) {
   .overlay {
     position: fixed;
     top: 0;
     right: 0;
     width: 0%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.95);
     overflow-x: hidden;
     z-index: 5;
     -webkit-transition: all .7s;
@@ -8759,10 +8759,16 @@ button.close {
     -webkit-flex-flow: column nowrap;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
-    top: 20%;
+    top: 30%;
     width: 100%;
     text-align: center; }
+    .overlay__content li {
+      padding: 10px 0; }
   #open-btn-nav {
     display: block;
     padding: 7px;
