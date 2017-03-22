@@ -1,0 +1,9 @@
+.slide-down {
+	.fa {
+		display: block;
+		font-size: 30px;
+		color: #ffffff;
+		text-align: center;
+	}
+	&:hover, &:focus {text-decoration: none;}
+}

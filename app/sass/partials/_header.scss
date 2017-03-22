@@ -1,6 +1,7 @@
 .header {
 	width: 100%;
-	min-height: 20vh;
+	display: block;
+	// min-height: 20vh;
 	.logo {
 		a {
 			color: #ffffff;
@@ -12,12 +13,6 @@
 		}
 	}
 }
-
-
-
-
-
-
 
 //nav menu
 .close-btn {
@@ -46,16 +41,17 @@
 }
 
 @media only screen and (max-width: 750px) {
+	// bg settings mobile window
 	.overlay {
 		position: fixed;
-		top: 0;	//меню відкриється зверху вниз - знизу вверх, залежить від top, bottom, залежить від height 0% чи 100% і відповдного js
-		right: 0; //меню відкриється зліва на право - справа на ліво, залежить від left, right залежить віж width 0% чи 100% і відповдного js
-		width: 0%; //якщо 0 то зліва на право - справа на ліво, якщо 100
-		height: 100%; //якщо 100 то зліва на право - справа на ліво, якщо 0 зверху вниз - знизу вверх
+		top: 0;
+		right: 0;
+		width: 0%;
+		height: 100%;
 		background: rgba(0,0,0, .95);
 		overflow-x: hidden;
 		z-index: 5;
-		transition: all .7s; //анімація відкриття вікна
+		transition: all .7s; //anim open window
 		a {
 			display: block;
 			padding: 10px;
@@ -67,6 +63,7 @@
 				transition: all .5s ease-in-out .1s;
 			}
 		}
+		//position close button
 		.close-btn {
 			position: absolute;
 			top: 12px;
@@ -74,11 +71,12 @@
 			font-size: 50px;
 		}
 	}
+	//position mobile menu
 	.overlay__content {
 		flex-flow: column nowrap;
 		justify-content: center;
 		position: relative;
-		top: 30%;// Indent the top menu
+		top: 30%;	// Indent the top menu
 		width: 100%;
 		text-align: center;
 		li {padding: 10px 0;}
