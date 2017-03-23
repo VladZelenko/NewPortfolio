@@ -70,10 +70,18 @@ img {
   src: url("../../libs/font-awesome/fonts/fontawesome-webfont.svg"), url("../../libs/font-awesome/fonts/fontawesome-webfont.woff2"), url("../../libs/font-awesome/fonts/fontawesome-webfont.eot"), url("../../libs/font-awesome/fonts/FontAwesome.otf"), url("../../libs/font-awesome/fonts/fontawesome-webfont.ttf"), url("../../libs/font-awesome/fonts/fontawesome-webfont.woff"); }
 
 @font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"); }
+
+@font-face {
   font-family: "font-awesome";
   font-style: normal;
   font-weight: 500;
   src: url("../../libs/font-awesome/fonts/fontawesome-webfont.svg"), url("../../libs/font-awesome/fonts/fontawesome-webfont.woff2"), url("../../libs/font-awesome/fonts/fontawesome-webfont.eot"), url("../../libs/font-awesome/fonts/FontAwesome.otf"), url("../../libs/font-awesome/fonts/fontawesome-webfont.ttf"), url("../../libs/font-awesome/fonts/fontawesome-webfont.woff"); }
+
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"); }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2674,6 +2682,23 @@ img {
   min-height: 700px;
   padding: 100px 0;
   background-color: #F5F5DC; }
+
+.portfolio {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px; }
+
+.contact-us {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background-color: #ccc; }
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  background-color: #696969; }
 
 .slide-down .fa {
   display: block;
